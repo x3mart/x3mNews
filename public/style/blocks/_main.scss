@@ -1,0 +1,18 @@
+.main {
+    min-height: calc(100vh - var(--footer-height) - var(--header-height));
+    box-sizing: border-box;
+    padding-top: 10%;
+
+    &__about {
+        width: 60%;
+        margin: 0 auto;
+        color: gray;
+        font-family: 'Arimo', sans-serif;
+        font-size: 35px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 60px;
+        letter-spacing: 3px;
+    }
+}
