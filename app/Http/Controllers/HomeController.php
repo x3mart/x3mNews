@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\News;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -9,15 +10,7 @@ class HomeController extends Controller
 {
 
     public function index() {
-        $adminRoute = route('admin.admin');
-        $categoriesRoute = route('news.categories');
-
-        return <<<php
-        <h1>Приветствуем на сайте НОВОСТЕЙ</h1>
-        бла бла бла всякая фигня<br>
-        <a href="{$categoriesRoute}"><h2>Категории новостей</h2></a>
-        <hr>
-        <a href="{$adminRoute}"> <h4>to admin</h4></a>
-php;
+        $allAboutNews = new News();
+        return view('index', ['categories'=>$allAboutNews->getAllCategories()]);
     }
 }

@@ -32,12 +32,12 @@ Route::group([
 
 Route::group([
     'prefix' => 'news',
-//    'namespace' => '',
+    'namespace' => 'News',
     'as' => 'news.'
 ], function (){
-    Route::get('/', 'NewsController@newsByCategories')->name('categories');
-    Route::get('/{cat_alias}', 'NewsController@newsOneCategory')->name('category');
-    Route::get('/{cat_alias}/{id}', 'NewsController@newsOne')->name('newsOne');
+    Route::get('/', 'NewsController@allCategories')->name('categories');
+    Route::get('/{cat_alias}', 'NewsController@newsOneCategory')->name('oneCategoryNews');
+    Route::get('/{cat_alias}/{id}', 'NewsController@oneNews')->name('oneNews');
 });
 
 
