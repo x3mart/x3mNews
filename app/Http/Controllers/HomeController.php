@@ -2,15 +2,27 @@
 
 namespace App\Http\Controllers;
 
-use App\News;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
-
 {
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 
-    public function index() {
-        $allAboutNews = new News();
-        return view('index', ['categories'=>$allAboutNews->getAllCategories()]);
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function index()
+    {
+        return view('home');
     }
 }

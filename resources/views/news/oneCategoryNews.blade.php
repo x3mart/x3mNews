@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('news.resources.views.layouts.main')
 
 @section('menuItems')
     @each('header.menu.menuItems', $categories, 'item')

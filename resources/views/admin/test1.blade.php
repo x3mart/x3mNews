@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('admin.resources.views.layouts.main')
 
 @section('menuItems')
     @include('header.menu.adminMenuItems')
