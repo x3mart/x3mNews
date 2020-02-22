@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('basicMenu')
+    @include('header.menu.basicMenu')
+@endsection
+
 @section('content')
 <div class="container">
     <div class="row justify-content-center">

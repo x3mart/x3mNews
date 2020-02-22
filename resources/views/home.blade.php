@@ -1,23 +1,13 @@
 @extends('layouts.app')
 
+@section('basicMenu')
+    @include('header.menu.basicMenu')
+@endsection
+
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
-                </div>
-            </div>
-        </div>
+    <div class="mx-auto mt-5 col-lg-4 jumbotron text-center">
+        <h1 class="text-primary">x3mNews</h1>
+        <p>Все о чем вы не знали<br> и <br>знать не хотели!!</p>
+        <p><a class="btn btn-primary btn-lg" href="{{route('news.categories')}}" role="button">категории</a></p>
     </div>
-</div>
 @endsection

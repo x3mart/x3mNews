@@ -1,10 +1,14 @@
-@extends('news.resources.views.layouts.main')
+@extends('layouts.app')
+
+@section('basicMenu')
+    @include('header.menu.basicMenu')
+@endsection
 
 @section('menuItems')
     @each('header.menu.menuItems', $categories, 'item')
 @endsection
 
-@section('main')
+@section('content')
     <h1 class="mt-lg-5 mt-md-3 text-center">Новости раздела {{$category['cat_name']}}</h1>
     <main class="container row mx-auto mt-lg-5 mt-md-3 justify-content-around">
         @foreach($news as $oneNews)

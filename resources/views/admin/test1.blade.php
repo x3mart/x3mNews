@@ -1,9 +1,15 @@
-@extends('admin.resources.views.layouts.main')
+@extends('layouts.app')
+
+@section('basicMenu')
+    @include('header.menu.basicMenu')
+@endsection
 
 @section('menuItems')
     @include('header.menu.adminMenuItems')
 @endsection
 
-@section('main')
-    <h1 class="mt-5 text-center">Тест1</h1>
+@section('content')
+    <main class="container mx-auto align-content-center">
+        <h3 class="text-center">Тест 1</h3>
+    </main>
 @endsection

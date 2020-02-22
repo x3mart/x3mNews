@@ -1,12 +1,16 @@
-@extends('news.resources.views.layouts.main')
+@extends('layouts.app')
+
+@section('basicMenu')
+    @include('header.menu.basicMenu')
+@endsection
 
 @section('menuItems')
     @each('header.menu.menuItems', $categories, 'item')
 @endsection
 
-@section('main')
+@section('content')
     <main class="container mx-auto">
-        <a href="{{route('news.oneCategoryNews', $category['cat_alias'])}}" class="text-decoration-none text-muted">
+        <a href="{{ route('news.oneCategoryNews', $category['cat_alias']) }}" class="text-decoration-none text-muted">
             <h1 class="text-center mt-lg-3">{{$category['cat_name']}}</h1>
         </a>
         <div id="carouselExampleIndicators" class="carousel slide mt-3" data-ride="carousel">
