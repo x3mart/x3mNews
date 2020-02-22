@@ -41,7 +41,7 @@
                 {{ old('inform') }}
             </textarea>
         <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="true" id="private" name="private">
+            <input class="form-check-input" type="checkbox" value="true" id="private" name="private" @if (old('private') == true) checked @endif>
             <label class="form-check-label" for="private">
                 Только для зарегистрированных
             </label>
