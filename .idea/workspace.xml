@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22b45e5f-0cc7-412d-83da-6d6c50bbb069" name="Default Changelist" comment="" />
+    <list default="true" id="22b45e5f-0cc7-412d-83da-6d6c50bbb069" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/php-test-framework.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/MyTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/addNews.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/addNews.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/news.json" beforeDir="false" afterPath="$PROJECT_DIR$/storage/app/public/news.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
     </execution>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
       <path value="$PROJECT_DIR$/vendor/psr/container" />
@@ -102,25 +111,59 @@
       <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
       <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
       <path value="$PROJECT_DIR$/vendor/opis/closure" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="ProjectId" id="1XNgiBMAVNbygdqDsUXFxzgzKE8" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\code\laravel\resources\views\header" />
+      <recent name="C:\code\laravel\app\Http\Controllers" />
+      <recent name="C:\code\laravel\app\Http\Controllers\News" />
+    </key>
+  </component>
+  <component name="RunManager" selected="PHPUnit.MyTest.testExample">
+    <configuration name="ExampleTest (1)" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\ExampleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/ExampleTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ExampleTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\ExampleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Unit/ExampleTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="MyTest.testExample" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\MyTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/MyTest.php" method="testExample" scope="Method" />
+      <method v="2" />
+    </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.MyTest.testExample" />
+        <item itemvalue="PHPUnit.ExampleTest (1)" />
+        <item itemvalue="PHPUnit.ExampleTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -132,17 +175,68 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580892090387</updated>
-      <workItem from="1580892097677" duration="7947000" />
+
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="-849" y="632" key="NewPhpFileDialog" timestamp="1580896575468">
+    <state x="-1103" y="363" key="#CLI_Interpreters" timestamp="1582380126169">
       <screen x="-1366" y="344" width="1366" height="728" />
     </state>
-    <state x="-849" y="632" key="NewPhpFileDialog/-1366.344.1366.728/0.0.1920.1160@-1366.344.1366.728" timestamp="1580896575468" />
+    <state x="-1103" y="363" key="#CLI_Interpreters/-1366.344.1366.728/0.0.1920.1160@-1366.344.1366.728" timestamp="1582380126169" />
+    <state x="-999" y="344" width="645" height="728" key="#ExampleTest" timestamp="1582380037153">
+      <screen x="-1366" y="344" width="1366" height="728" />
+    </state>
+    <state x="-999" y="344" width="645" height="728" key="#ExampleTest/-1366.344.1366.728/0.0.1920.1160@-1366.344.1366.728" timestamp="1582380037153" />
+    <state x="-963" y="511" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582113163060">
+      <screen x="-1366" y="344" width="1366" height="728" />
+    </state>
+    <state x="-963" y="511" key="#com.intellij.fileTypes.FileTypeChooser/-1366.344.1366.728/0.0.1920.1160@-1366.344.1366.728" timestamp="1582113163060" />
+    <state x="-929" y="344" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1582112215430">
+      <screen x="-1366" y="344" width="1366" height="728" />
+    </state>
+    <state x="-929" y="344" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1366.344.1366.728/0.0.1920.1160@-1366.344.1366.728" timestamp="1582112215430" />
+    <state x="-999" y="384" width="645" height="688" key="#phpunit.xml" timestamp="1580920797089">
+      <screen x="-1366" y="344" width="1366" height="728" />
+    </state>
+    <state x="-999" y="384" width="645" height="688" key="#phpunit.xml/-1366.344.1366.728/0.0.1920.1160@-1366.344.1366.728" timestamp="1580920797089" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1582380622730">
+      <screen x="-1366" y="344" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/-1366.344.1366.728/0.0.1920.1160@-1366.344.1366.728" timestamp="1582380622730" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1582380622729">
+      <screen x="-1366" y="344" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.center/-1366.344.1366.728/0.0.1920.1160@-1366.344.1366.728" timestamp="1582380622729" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1582380622729">
+      <screen x="-1366" y="344" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.left/-1366.344.1366.728/0.0.1920.1160@-1366.344.1366.728" timestamp="1582380622729" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1582380622730">
+      <screen x="-1366" y="344" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.right/-1366.344.1366.728/0.0.1920.1160@-1366.344.1366.728" timestamp="1582380622730" />
+    <state x="-883" y="522" key="NewPhpClassDialog" timestamp="1582295887989">
+      <screen x="-1366" y="344" width="1366" height="728" />
+    </state>
+    <state x="-883" y="522" key="NewPhpClassDialog/-1366.344.1366.728/0.0.1920.1160@-1366.344.1366.728" timestamp="1582295887989" />
+    <state x="-849" y="632" key="NewPhpFileDialog" timestamp="1582295921496">
+      <screen x="-1366" y="344" width="1366" height="728" />
+    </state>
+    <state x="-849" y="632" key="NewPhpFileDialog/-1366.344.1366.728/0.0.1920.1160@-1366.344.1366.728" timestamp="1582295921496" />
+    <state x="-1182" y="351" key="SettingsEditor" timestamp="1582380129433">
+      <screen x="-1366" y="344" width="1366" height="728" />
+    </state>
+    <state x="-1182" y="351" key="SettingsEditor/-1366.344.1366.728/0.0.1920.1160@-1366.344.1366.728" timestamp="1582380129433" />
+    <state x="-987" y="533" key="com.intellij.ide.util.TipDialog" timestamp="1582194619995">
+      <screen x="-1366" y="344" width="1366" height="728" />
+    </state>
+    <state x="-987" y="533" key="com.intellij.ide.util.TipDialog/-1366.344.1366.728/0.0.1920.1160@-1366.344.1366.728" timestamp="1582194619995" />
   </component>
 </project>

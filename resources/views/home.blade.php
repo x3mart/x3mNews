@@ -1,7 +1,7 @@
-@extends('layouts.main')
+@extends('layouts.app')
 
-@section('menuItems')
-   @each('header.menu.menuItems', $categories, 'item')
+@section('basicMenu')
+    @include('header.menu.basicMenu')
 @endsection
 
 @section('content')
@@ -11,4 +11,3 @@
         <p><a class="btn btn-primary btn-lg" href="{{route('news.categories')}}" role="button">категории</a></p>
     </div>
 @endsection
-

@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('resources.views.layouts.main')
 
 @section('news')
     <main class="main">
