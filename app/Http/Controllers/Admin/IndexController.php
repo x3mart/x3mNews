@@ -20,13 +20,12 @@ class IndexController extends Controller
             foreach ($freshNews as $item) {
                 if (is_null($item)) {
                     $request->flash();
-                    return redirect()->route('admin.addNews', ['categories' => $allAboutNews->getAllCategories()]);
+                    return redirect()->route('admin.addNews');
                 }
             }
             $allAboutNews->addNews($freshNews);
-            return redirect()->route('admin.addNews', ['categories' => $allAboutNews->getAllCategories()]);
+            return redirect()->route('admin.addNews');
         }
-//        dump($request->except('_token'));
         return view('admin.addNews', ['categories' => $allAboutNews->getAllCategories()]);
     }
 

@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22b45e5f-0cc7-412d-83da-6d6c50bbb069" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php-test-framework.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/MyTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/addNews.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/addNews.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/IndexController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/app/public/news.json" beforeDir="false" afterPath="$PROJECT_DIR$/storage/app/public/news.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -184,7 +182,7 @@
       <workItem from="1581934780483" duration="35367000" />
       <workItem from="1582104738503" duration="3998000" />
       <workItem from="1582109069828" duration="9063000" />
-      <workItem from="1582194620896" duration="38445000" />
+      <workItem from="1582194620896" duration="40340000" />
     </task>
     <servers />
   </component>
@@ -215,22 +213,22 @@
       <screen x="-1366" y="344" width="1366" height="728" />
     </state>
     <state x="-999" y="384" width="645" height="688" key="#phpunit.xml/-1366.344.1366.728/0.0.1920.1160@-1366.344.1366.728" timestamp="1580920797089" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1582380622730">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1582381169104">
       <screen x="-1366" y="344" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/-1366.344.1366.728/0.0.1920.1160@-1366.344.1366.728" timestamp="1582380622730" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1582380622729">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/-1366.344.1366.728/0.0.1920.1160@-1366.344.1366.728" timestamp="1582381169104" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1582381169103">
       <screen x="-1366" y="344" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/-1366.344.1366.728/0.0.1920.1160@-1366.344.1366.728" timestamp="1582380622729" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1582380622729">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/-1366.344.1366.728/0.0.1920.1160@-1366.344.1366.728" timestamp="1582381169103" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1582381169103">
       <screen x="-1366" y="344" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/-1366.344.1366.728/0.0.1920.1160@-1366.344.1366.728" timestamp="1582380622729" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1582380622730">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/-1366.344.1366.728/0.0.1920.1160@-1366.344.1366.728" timestamp="1582381169103" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1582381169104">
       <screen x="-1366" y="344" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/-1366.344.1366.728/0.0.1920.1160@-1366.344.1366.728" timestamp="1582380622730" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/-1366.344.1366.728/0.0.1920.1160@-1366.344.1366.728" timestamp="1582381169104" />
     <state x="-883" y="522" key="NewPhpClassDialog" timestamp="1582295887989">
       <screen x="-1366" y="344" width="1366" height="728" />
     </state>
