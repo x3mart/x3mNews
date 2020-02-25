@@ -9,26 +9,15 @@ use App\News;
 class NewsController extends Controller
 {
     public function allCategories() {
-        $allAboutNews = new News ();
-        $categories = $allAboutNews->getAllCategories();
-        return view('news.allCategories', ['categories'=>$categories]);
+        return view('news.allCategories', ['categories'=>News::getAllCategories()]);
     }
 
     public function newsOneCategory ($cat_alias) {
-        $allAboutNews = new News ();
-        $category = $allAboutNews->getOneCategory($cat_alias);
-        $news = $allAboutNews->getOneCategoryNews($category['cat_id']);
-        $categories = $allAboutNews->getAllCategories();
-        return view('news.oneCategoryNews', ['category' => $category,
-            'news'=> $news, 'categories' => $categories]);
+        return view('news.oneCategoryNews', ['news'=> News::getOneCategoryNews($cat_alias),
+            'categories' => News::getAllCategories()]);
     }
 
     public function oneNews ($cat_alias, $id) {
-        $allAboutNews = new News ();
-        $category = $allAboutNews->getOneCategory($cat_alias);
-        $news = $allAboutNews->getOneNews($id);
-        $categories = $allAboutNews->getAllCategories();
-        return view('news.oneNews', ['category' => $category,
-            'news'=> $news, 'categories' => $categories]);
+        return view('news.oneNews', ['news'=> News::getOneNews($id), 'categories' => News::getAllCategories()]);
     }
 }

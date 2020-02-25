@@ -10,8 +10,8 @@
 
 @section('content')
     <main class="container mx-auto">
-        <a href="{{ route('news.oneCategoryNews', $category['cat_alias']) }}" class="text-decoration-none text-muted">
-            <h1 class="text-center mt-lg-3">{{$category['cat_name']}}</h1>
+        <a href="{{ route('news.oneCategoryNews', $news->category_alias) }}" class="text-decoration-none text-muted">
+            <h1 class="text-center">{{ $news->category_name }}</h1>
         </a>
         <div id="carouselExampleIndicators" class="carousel slide mt-3" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -40,10 +40,10 @@
             </a>
         </div>
 
-        <h3 class="text-center mt-lg-3">{{$news['title']}}</h3>
+        <h3 class="text-center mt-lg-3">{{ $news->news_title }}</h3>
 
         <p class="text-muted">
-            {{$news['inform']}}
+            {{ $news->news_inform }}
         </p>
 
     </main>

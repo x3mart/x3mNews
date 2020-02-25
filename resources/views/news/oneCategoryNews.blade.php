@@ -9,15 +9,15 @@
 @endsection
 
 @section('content')
-    <h1 class="mt-lg-5 mt-md-3 text-center">Новости раздела {{$category['cat_name']}}</h1>
+    <h1 class="mt-lg-5 mt-md-3 text-center">Новости раздела {{ $news[0]->category_name }}</h1>
     <main class="container row mx-auto mt-lg-5 mt-md-3 justify-content-around">
-        @foreach($news as $oneNews)
+        @foreach($news as $item)
             <div class="card mb-5" style="width: 18rem;">
-                <img src="{{asset('imgs/1.svg')}}" class="card-img-top" alt="...">
+                <img src="{{ $item->news_image ?? asset('imgs/1.svg') }}" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">{{$oneNews['title']}}</h5>
-                    <p class="card-text">{{$oneNews['short']}}</p>
-                    <a href="{{route('news.oneNews', ['cat_alias'=>$category['cat_alias'], 'id'=>$oneNews['id']])}}"
+                    <h5 class="card-title">{{ $item->news_title }}</h5>
+                    <p class="card-text">{{$item->news_short }}</p>
+                    <a href="{{ route('news.oneNews', ['cat_alias'=>$item->category_alias, 'id'=>$item->news_id]) }}"
                        class="btn btn-primary">Подробнее -></a>
                 </div>
             </div>
