@@ -26,7 +26,9 @@ class NewsSeeder extends Seeder
                     'news_private'=> false,
                     'news_image' => $faker->imageUrl(400, 200),
                     'news_category' => $ii,
-                    'news_important' => rand(0,1)
+                    'news_important' => rand(0,1),
+                    'news_likes' => $faker->numberBetween(0, 364),
+                    'news_views' => $faker->numberBetween(70, 3654)
                 ];
         }
         return $data;

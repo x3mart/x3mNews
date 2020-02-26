@@ -11,13 +11,6 @@ use Illuminate\Support\Facades\Storage;
 class News extends Model
 {
 
-    public function __construct(array $attributes = [])
-    {
-        parent::__construct($attributes);
-        $this->news = $this->getAllNews();
-        $this->categories = $this->getAllCategories();
-    }
-
     public function getAllNews() {
         return DB::table('news')->get();
     }
@@ -25,14 +18,6 @@ class News extends Model
 
     public static function getAllCategories() {
         return DB::table('categories')->get();
-    }
-
-    public function getOneCategory($alias) {
-        foreach ($this->categories as $category) {
-            if ($category->category_alias == $alias) {
-                return $category;
-            }
-        }
     }
 
     public static function getOneCategoryNews($alias) {
@@ -44,24 +29,32 @@ class News extends Model
     }
 
     public static function getOneNews($id) {
-        $news = DB::table('news')
+        return DB::table('news')
             ->where('news_id', '=', $id)
             ->join('categories', 'news.news_category', '=', 'categories.category_id')
             ->select('news.*', 'categories.category_name', 'categories.category_alias')
-            ->get();
-                return $news[0];
+            ->first();
     }
 
+    public static function getImportantNews() {
+        return DB::table('news')
+            ->join('categories', 'news.news_category', '=', 'categories.category_id')
+            ->select('news.*', 'categories.category_name', 'categories.category_alias')
+            ->where('news.news_important', '=', 1)
+            ->orderByDesc('news.news_views')
+            ->get();
+
+    }
 
     public function addNews($freshNews) {
-        $id = count($this->news) + 1;
-        $freshNews['id'] = $id;
-        $path = Storage::putFile('public/imgs', $freshNews['image']);
-        $url = Storage::url($path);
-        $freshNews['image'] = $url;
-        $news = $this->news;
-        array_push($news, $freshNews);
-        $json = json_encode($news, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
-        Storage::put('news/news.json', $json);
+//        $id = count($this->news) + 1;
+//        $freshNews['id'] = $id;
+//        $path = Storage::putFile('public/imgs', $freshNews['image']);
+//        $url = Storage::url($path);
+//        $freshNews['image'] = $url;
+//        $news = $this->news;
+//        array_push($news, $freshNews);
+//        $json = json_encode($news, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+//        Storage::put('news/news.json', $json);
     }
 }

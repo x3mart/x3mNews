@@ -26,6 +26,15 @@ class CreateNewsTable extends Migration
             $table->boolean('news_important')
                 ->default(false)
                 ->comment('Главная новость');
+            $table->integer('news_likes')
+                ->default(0)
+                ->comment('Количество лайков у статьи');
+            $table->integer('news_views')
+                ->default(0)
+                ->comment('Количество просмотров статьи');
+            $table->integer('news_comments_count')
+                ->default(0)
+                ->comment('Количество коментариев');
             $table->timestamp('news_created_at')->useCurrent();
             $table->timestamp('news_updated_at')->useCurrent();
         });

@@ -2,34 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22b45e5f-0cc7-412d-83da-6d6c50bbb069" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_02_25_083914_create_news_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_02_25_105725_create_categories_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/CategoriesSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/NewsSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/app/news/categories.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/app/news/news.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/app/public/imgs/news_categories/crime.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/app/public/imgs/news_categories/culture.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/app/public/imgs/news_categories/economic.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/app/public/imgs/news_categories/politic.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/app/public/imgs/news_categories/sport.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/eye.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/heart.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/IndexController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/News/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/News/NewsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/News.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/News.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/addNews.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/addNews.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/header/menu/menuItems.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/header/menu/menuItems.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_25_083914_create_news_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_25_083914_create_news_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/NewsSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/NewsSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/news/allCategories.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/news/allCategories.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/news.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/news/oneCategoryNews.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/news/oneCategoryNews.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/news/oneNews.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/news/oneNews.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/public/news.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,18 +160,19 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/storage/app/news" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/imgs" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\code\laravel\storage\app\news" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\code\laravel\resources\views\header" />
       <recent name="C:\code\laravel\app\Http\Controllers" />
       <recent name="C:\code\laravel\app\Http\Controllers\News" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\code\laravel\public\imgs" />
+      <recent name="C:\code\laravel\storage\app\news" />
     </key>
   </component>
   <component name="RunManager" selected="PHPUnit.MyTest.testExample">
@@ -254,6 +243,8 @@
       <workItem from="1582109069828" duration="9063000" />
       <workItem from="1582194620896" duration="70339000" />
       <workItem from="1582619824191" duration="31611000" />
+      <workItem from="1582706297907" duration="7649000" />
+      <workItem from="1582715845638" duration="357000" />
     </task>
     <servers />
   </component>
@@ -324,10 +315,10 @@
       <screen x="-1366" y="344" width="1366" height="728" />
     </state>
     <state x="-1182" y="351" key="SettingsEditor/-1366.344.1366.728/0.0.1920.1160@-1366.344.1366.728" timestamp="1582380129433" />
-    <state x="-987" y="533" key="com.intellij.ide.util.TipDialog" timestamp="1582619829154">
+    <state x="-987" y="533" key="com.intellij.ide.util.TipDialog" timestamp="1582715845766">
       <screen x="-1366" y="344" width="1366" height="728" />
     </state>
-    <state x="-987" y="533" key="com.intellij.ide.util.TipDialog/-1366.344.1366.728/0.0.1920.1160@-1366.344.1366.728" timestamp="1582619829154" />
+    <state x="-987" y="533" key="com.intellij.ide.util.TipDialog/-1366.344.1366.728/0.0.1920.1160@-1366.344.1366.728" timestamp="1582715845766" />
     <state x="-1020" y="393" width="672" height="678" key="search.everywhere.popup" timestamp="1582639603829">
       <screen x="-1366" y="344" width="1366" height="728" />
     </state>

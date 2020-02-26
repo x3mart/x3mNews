@@ -14,6 +14,12 @@
        @foreach($news as $item)
            <div class="card mb-5" style="width: 18rem;">
                <img src="{{ $item->news_image ?? asset('imgs/1.svg') }}" class="card-img-top" alt="...">
+               <div style="display:flex">
+                   <img class="mx-2" src="{{ asset('imgs/eye.svg') }}" style="width: 20px; display: inline-block" alt="">
+                    <p class="text-primary mb-0">{{ $item->news_views }}</p>
+                   <img class="mx-2" src="{{ asset('imgs/heart.svg') }}" style="width: 20px; display: inline-block" alt="">
+                   <p class="text-primary mb-0">{{ $item->news_likes }}</p>
+               </div>
                <div class="card-body">
                    <a href="{{ route('news.oneCategoryNews', $item->category_alias) }}"
                       class="text-primary">{{ $item->category_name }}</a>

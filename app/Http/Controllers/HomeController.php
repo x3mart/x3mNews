@@ -25,12 +25,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $news = DB::table('news')
-            ->join('categories', 'news.news_category', '=', 'categories.category_id')
-            ->select('news.*', 'categories.category_name', 'categories.category_alias')
-            ->where('news.news_important', '=', 1)
-            ->orderByDesc('news.news_id')
-            ->get();
-        return view('home',['news'=>$news]);
+        return view('home',['news'=>News::getImportantNews()]);
     }
 }
