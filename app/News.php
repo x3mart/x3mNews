@@ -41,20 +41,27 @@ class News extends Model
             ->join('categories', 'news.news_category', '=', 'categories.category_id')
             ->select('news.*', 'categories.category_name', 'categories.category_alias')
             ->where('news.news_important', '=', 1)
+            ->orderByDesc('news.news_created_at')
             ->orderByDesc('news.news_views')
+            ->take(15)
             ->get();
-
     }
 
-    public function addNews($freshNews) {
-//        $id = count($this->news) + 1;
-//        $freshNews['id'] = $id;
-//        $path = Storage::putFile('public/imgs', $freshNews['image']);
-//        $url = Storage::url($path);
-//        $freshNews['image'] = $url;
-//        $news = $this->news;
-//        array_push($news, $freshNews);
-//        $json = json_encode($news, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
-//        Storage::put('news/news.json', $json);
+    public static function addNews($freshNews) {
+        $path = Storage::putFile('public/imgs', $freshNews['image']);
+        $url = Storage::url($path);
+        DB::table('news')->insert([
+            [
+                'news_title' => $freshNews['title'],
+                'news_category' => $freshNews['category'],
+                'news_short' => $freshNews['short'],
+                'news_inform' => $freshNews['inform'],
+                'news_image' => $url,
+                'news_likes' => random_int(0, 365),
+                'news_views' => random_int(432, 3765),
+                'news_private' => $freshNews['private'] ?? 0,
+                'news_important' => $freshNews['important'] ?? 0
+            ]
+        ]);
     }
 }

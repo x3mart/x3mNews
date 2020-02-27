@@ -32,8 +32,8 @@
                      id="category" name="category">
                 <option disabled  selected>Выбери категорию новостей</option>
                 @forelse($categories as $category)
-                <option @if ($category['cat_id'] == old('category')) selected @endif value="{{ $category['cat_id'] }}">
-                    {{ $category['cat_name'] }}
+                <option @if ($category->category_id == old('category')) selected @endif value="{{ $category->category_id }}">
+                    {{ $category->category_name }}
                 </option>
                     @empty
                     <option disabled>Нет категорий</option>
@@ -43,25 +43,31 @@
         <div class="form-group">
             <label for="short">Описание новости</label>
             <textarea class="form-control {{ (is_null(old('short')) && session('error')) ? 'alert-danger' : '' }}"
-                      id="short" name="short" rows="3" placeholder="Манящее краткое описание вашей новости. Что бы хотелось ее прочесть!!!">
-                {{ old('short') }}
+                      id="short" name="short" rows="3" placeholder="Манящее краткое описание вашей новости. Что бы
+                      хотелось ее прочесть!!!"> {{ old('short') }}
             </textarea>
         </div>
         <div class="form-group">
             <label for="inform">Полный текст новости</label>
             <textarea class="form-control {{ (is_null(old('inform')) && session('error')) ? 'alert-danger' : '' }}"
-                      id="inform" name="inform" rows="10" placeholder="Подробный текст">
-                {{ old('inform') }}
+                      id="inform" name="inform" rows="10" placeholder="Подробный текст"> {{ old('inform') }}
             </textarea>
         </div>
         <div class="form-group">
             <input type="file" class="{{session('error') ? 'alert-danger' : ''}}" id="image" name="image">
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="true" id="private" name="private"
-                   @if (old('private') == true) checked @endif>
+            <input class="form-check-input" type="checkbox" value="1" id="private" name="private"
+                   @if (old('private') == 1) checked @endif>
             <label class="form-check-label" for="private">
                 Только для зарегистрированных
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="1" id="important" name="important"
+                   @if (old('important') == 1) checked @endif>
+            <label class="form-check-label" for="important">
+                Главная новость
             </label>
         </div>
         <div class="form-group mt-3">
