@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22b45e5f-0cc7-412d-83da-6d6c50bbb069" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/storage/app/public/imgs/5K9beoVa99D8O8jXPDxQQKd0RucbbsyY2dDZDFDe.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/app/public/imgs/ASf9N8pOrqu5D5iewAk7WjmlVapk9faVyhGnVHRN.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/app/public/imgs/AU4dIOIw49VNqOML9CI6MeoRE0f4SR9rHS0yXPXP.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/app/public/imgs/IXs3ZOMlci7z0pHrdecgHQGtnGw6OCYP1XH5WvKc.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/app/public/imgs/ggzJhYMLbllxOTDgS2jQxlzv0mruUDS5b8J7WNGW.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Categories.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/News Old.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/IndexController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/News.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/News.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/addNews.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/addNews.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_25_105725_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_25_105725_create_categories_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +30,23 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="laravel" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="laravel" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="laravel" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="laravel: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="Git.Settings">
@@ -235,6 +246,7 @@
       <workItem from="1582706297907" duration="7649000" />
       <workItem from="1582715845638" duration="357000" />
       <workItem from="1582724366935" duration="7060000" />
+      <workItem from="1582796674356" duration="3461000" />
     </task>
     <servers />
   </component>
@@ -305,10 +317,10 @@
       <screen x="-1366" y="344" width="1366" height="728" />
     </state>
     <state x="-1182" y="351" key="SettingsEditor/-1366.344.1366.728/0.0.1920.1160@-1366.344.1366.728" timestamp="1582380129433" />
-    <state x="-987" y="533" key="com.intellij.ide.util.TipDialog" timestamp="1582724367125">
+    <state x="-987" y="533" key="com.intellij.ide.util.TipDialog" timestamp="1582796675294">
       <screen x="-1366" y="344" width="1366" height="728" />
     </state>
-    <state x="-987" y="533" key="com.intellij.ide.util.TipDialog/-1366.344.1366.728/0.0.1920.1160@-1366.344.1366.728" timestamp="1582724367125" />
+    <state x="-987" y="533" key="com.intellij.ide.util.TipDialog/-1366.344.1366.728/0.0.1920.1160@-1366.344.1366.728" timestamp="1582796675294" />
     <state x="-1020" y="393" width="672" height="678" key="search.everywhere.popup" timestamp="1582639603829">
       <screen x="-1366" y="344" width="1366" height="728" />
     </state>
