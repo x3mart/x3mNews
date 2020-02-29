@@ -14,15 +14,23 @@ class CreateNewsTable extends Migration
     public function up()
     {
         Schema::create('news', function (Blueprint $table) {
-            $table->bigIncrements('news_id')->unsigned();
-            $table->string('news_title') -> comment('Заголовок новости');
-            $table->text('news_short')->comment('Краткое описание новости');
-            $table->text('news_inform')->comment('Полный текст новости');
+            $table->bigIncrements('id')->unsigned();
+            $table->string('news_title')
+                ->nullable(true)
+                -> comment('Заголовок новости');
+            $table->text('news_short')
+                ->nullable(true)
+                ->comment('Краткое описание новости');
+            $table->text('news_inform')
+                ->nullable(true)
+                ->comment('Полный текст новости');
             $table->boolean('news_private')
                 ->default(false)
                 ->comment('Только для зарегистрированных пользователей');
-            $table->integer('news_category');
-            $table->string('news_image')->default(null);
+//            $table->integer('news_category');
+            $table->string('news_image')
+                ->nullable(true)
+                ->default(null);
             $table->boolean('news_important')
                 ->default(false)
                 ->comment('Главная новость');
@@ -35,8 +43,8 @@ class CreateNewsTable extends Migration
             $table->integer('news_comments_count')
                 ->default(0)
                 ->comment('Количество коментариев');
-            $table->timestamp('news_created_at')->useCurrent();
-            $table->timestamp('news_updated_at')->useCurrent();
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent();
         });
     }
 

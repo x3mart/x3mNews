@@ -25,6 +25,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home',['news'=>News::getImportantNews()]);
+        return view('home',[
+            'news' => News::with('category')
+                ->where('news_important', '=', 1)
+                ->orderByDesc('news.created_at')
+                ->orderByDesc('news.news_views')
+                ->paginate(6)
+        ]);
     }
 }

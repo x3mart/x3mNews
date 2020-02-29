@@ -14,15 +14,22 @@ class CreateCategoriesTable extends Migration
     public function up()
     {
         Schema::create('categories', function (Blueprint $table) {
-            $table->increments('category_id')->unsigned();
-            $table->string('category_name') -> comment('Название категории');
-            $table->string('category_alias')->comment('Название категории на латинице');
-            $table->text('category_description')->comment('Описание раздела');
+            $table->bigIncrements('id')->unsigned();
+            $table->string('category_name')
+                ->nullable(true)
+                -> comment('Название категории');
+            $table->string('category_alias')
+                ->nullable(true)
+                ->comment('Название категории на латинице');
+            $table->text('category_description')
+                ->nullable(true)
+                ->comment('Описание раздела');
             $table->string('category_image')->nullable(true);
             $table->boolean('category_private')->default(false);
 //            $table->timestamp('category_created_at')->useCurrent();
 //            $table->timestamp('category_updated_at')->useCurrent();
         });
+//       (new CategoriesSeeder())->run();
     }
 
     /**

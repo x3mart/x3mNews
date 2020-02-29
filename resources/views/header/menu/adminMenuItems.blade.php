@@ -5,6 +5,11 @@
     </a>
 </li>
 <li class="nav-item">
+    <a class="nav-link {{ request()->routeIs('admin.allCategories')? 'font-weight-bolder' : '' }}" href="{{route('admin.allCategories')}}">
+        Редактировать разделы
+    </a>
+</li>
+<li class="nav-item">
     <a class="nav-link {{ request()->routeIs('admin.test1')? 'font-weight-bolder' : '' }}" href="{{route('admin.test1')}}">
         Test1
     </a>
