@@ -26,10 +26,23 @@ Route::group([
     'as'=>'admin.'
 ], function () {
     Route::get('/', 'IndexController@index')->name('admin');
-    Route::match(['post','get'],'/addNews', 'IndexController@addnews')->name('addNews');
+
+    Route::match(['post','get'],'/addNews', 'NewsController@addnews')->name('addNews');
+    Route::get('/deleteNews{news}', 'NewsController@delete')->name('deleteNews');
+    Route::get('/editNews/{news}', 'NewsController@update')->name('updateNews');
+    Route::post('/saveNews{news}', 'NewsController@save')->name('saveNews');
+
+    Route::get('/categories', 'CategoriesController@allCategories')->name('allCategories');
+    Route::match(['post','get'],'categories/addCategory', 'CategoriesController@addCategory')->name('addCategory');
+    Route::get('/categories/deleteCategory{category}', 'CategoriesController@delete')->name('deleteCategory');
+    Route::get('/categories/editCategory/{category}', 'CategoriesController@update')->name('updateCategory');
+    Route::post('/categories/saveCategory{category}', 'CategoriesController@save')->name('saveCategory');
+
     Route::get('/test1', 'IndexController@test1')->name('test1');
     Route::get('/test2', 'IndexController@test2')->name('test2');
 });
+
+
 
 Route::group([
     'prefix' => 'news',

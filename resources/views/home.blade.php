@@ -21,14 +21,17 @@
                    <p class="text-primary mb-0">{{ $item->news_likes }}</p>
                </div>
                <div class="card-body">
-                   <a href="{{ route('news.oneCategoryNews', $item->category_alias) }}"
-                      class="text-primary">{{ $item->category_name }}</a>
+                   <a href="{{ route('news.oneCategoryNews', $item->category->category_alias) }}"
+                      class="text-primary">{{ $item->category->category_name }}</a>
                    <h5 class="card-title">{{ $item->news_title }}</h5>
                    <p class="card-text">{{ $item->news_short }}</p>
-                   <a href="{{ route('news.oneNews', ['cat_alias'=>$item->category_alias, 'id'=>$item->news_id]) }}"
+                   <a href="{{ route('news.oneNews', ['cat_alias'=>$item->category->category_alias, 'id'=>$item->id]) }}"
                       class="btn btn-primary">Подробнее -></a>
                </div>
            </div>
        @endforeach
    </main>
+   <div class="container mx-auto my-lg-3">
+       {{ $news->links() }}
+   </div>
 @endsection

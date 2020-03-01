@@ -2,11 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22b45e5f-0cc7-412d-83da-6d6c50bbb069" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Categories.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/News Old.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoriesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/NewsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_02_27_170012_alter_table_news_add_category_id.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/addCategory.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/allCategories.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/debugbar/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/laravel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Categories.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Categories.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/IndexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/News/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/News/NewsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/News Old.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/News Old.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/News.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/News.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_25_083914_create_news_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_25_083914_create_news_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_25_105725_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_25_105725_create_categories_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/NewsSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/NewsSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/addNews.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/addNews.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/test1.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/test1.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/header/menu/adminMenuItems.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/header/menu/adminMenuItems.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/news/allCategories.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/news/allCategories.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/news/oneCategoryNews.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/news/oneCategoryNews.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/news/oneNews.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/news/oneNews.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/imgs/5K9beoVa99D8O8jXPDxQQKd0RucbbsyY2dDZDFDe.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/imgs/ASf9N8pOrqu5D5iewAk7WjmlVapk9faVyhGnVHRN.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/imgs/AU4dIOIw49VNqOML9CI6MeoRE0f4SR9rHS0yXPXP.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/imgs/IXs3ZOMlci7z0pHrdecgHQGtnGw6OCYP1XH5WvKc.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/imgs/ggzJhYMLbllxOTDgS2jQxlzv0mruUDS5b8J7WNGW.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/imgs/news_categories/crime.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +78,20 @@
         <item name="laravel" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="laravel: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="laravel" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="laravel: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="categories: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="laravel" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="laravel: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="news: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -142,6 +189,8 @@
       <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
       <path value="$PROJECT_DIR$/vendor/opis/closure" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar" />
+      <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
     </include_path>
   </component>
   <component name="ProjectId" id="1XNgiBMAVNbygdqDsUXFxzgzKE8" />
@@ -247,6 +296,7 @@
       <workItem from="1582715845638" duration="357000" />
       <workItem from="1582724366935" duration="7060000" />
       <workItem from="1582796674356" duration="3461000" />
+      <workItem from="1582805196741" duration="68306000" />
     </task>
     <servers />
   </component>
@@ -277,10 +327,10 @@
       <screen x="-1366" y="344" width="1366" height="728" />
     </state>
     <state x="-929" y="344" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1366.344.1366.728/0.0.1920.1160@-1366.344.1366.728" timestamp="1582112215430" />
-    <state x="-953" y="463" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1582638812698">
+    <state x="-953" y="463" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1582917590422">
       <screen x="-1366" y="344" width="1366" height="728" />
     </state>
-    <state x="-953" y="463" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1366.344.1366.728/0.0.1920.1160@-1366.344.1366.728" timestamp="1582638812698" />
+    <state x="-953" y="463" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1366.344.1366.728/0.0.1920.1160@-1366.344.1366.728" timestamp="1582917590422" />
     <state x="-999" y="384" width="645" height="688" key="#phpunit.xml" timestamp="1580920797089">
       <screen x="-1366" y="344" width="1366" height="728" />
     </state>
@@ -305,14 +355,14 @@
       <screen x="-1366" y="344" width="1366" height="728" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/-1366.344.1366.728/0.0.1920.1160@-1366.344.1366.728" timestamp="1582724606482" />
-    <state x="-883" y="522" key="NewPhpClassDialog" timestamp="1582295887989">
+    <state x="-883" y="522" key="NewPhpClassDialog" timestamp="1582830503113">
       <screen x="-1366" y="344" width="1366" height="728" />
     </state>
-    <state x="-883" y="522" key="NewPhpClassDialog/-1366.344.1366.728/0.0.1920.1160@-1366.344.1366.728" timestamp="1582295887989" />
-    <state x="-849" y="632" key="NewPhpFileDialog" timestamp="1582295921496">
+    <state x="-883" y="522" key="NewPhpClassDialog/-1366.344.1366.728/0.0.1920.1160@-1366.344.1366.728" timestamp="1582830503113" />
+    <state x="-849" y="632" key="NewPhpFileDialog" timestamp="1582912770279">
       <screen x="-1366" y="344" width="1366" height="728" />
     </state>
-    <state x="-849" y="632" key="NewPhpFileDialog/-1366.344.1366.728/0.0.1920.1160@-1366.344.1366.728" timestamp="1582295921496" />
+    <state x="-849" y="632" key="NewPhpFileDialog/-1366.344.1366.728/0.0.1920.1160@-1366.344.1366.728" timestamp="1582912770278" />
     <state x="-1182" y="351" key="SettingsEditor" timestamp="1582380129433">
       <screen x="-1366" y="344" width="1366" height="728" />
     </state>
