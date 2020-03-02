@@ -2,44 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22b45e5f-0cc7-412d-83da-6d6c50bbb069" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoriesController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/NewsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_02_27_170012_alter_table_news_add_category_id.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/addCategory.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/allCategories.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/debugbar/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/laravel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Categories.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Categories.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/IndexController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/News/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/News/NewsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/News Old.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/News Old.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/News.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/News.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_25_083914_create_news_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_25_083914_create_news_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_25_105725_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_25_105725_create_categories_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/NewsSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/NewsSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/addNews.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/addNews.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/test1.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/test1.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/header/menu/adminMenuItems.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/header/menu/adminMenuItems.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/news/allCategories.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/news/allCategories.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/news/oneCategoryNews.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/news/oneCategoryNews.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/news/oneNews.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/news/oneNews.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/648asHrEYTvzLG4ZOq5z6Ab8k5TnligY0ZikyOak.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/imgs/1ZlHKEoNoFAmnDl5h4KDw9lf0HgtPKbkNrpxguTA.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/imgs/3oxuIg5gsYoOouMBIGdBu5Axr3LrgelToXQZpE1T.jpeg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/app/public/imgs/5K9beoVa99D8O8jXPDxQQKd0RucbbsyY2dDZDFDe.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/public/imgs/ASf9N8pOrqu5D5iewAk7WjmlVapk9faVyhGnVHRN.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/public/imgs/AU4dIOIw49VNqOML9CI6MeoRE0f4SR9rHS0yXPXP.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/public/imgs/IXs3ZOMlci7z0pHrdecgHQGtnGw6OCYP1XH5WvKc.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/public/imgs/ggzJhYMLbllxOTDgS2jQxlzv0mruUDS5b8J7WNGW.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/public/imgs/news_categories/crime.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -296,7 +263,7 @@
       <workItem from="1582715845638" duration="357000" />
       <workItem from="1582724366935" duration="7060000" />
       <workItem from="1582796674356" duration="3461000" />
-      <workItem from="1582805196741" duration="68306000" />
+      <workItem from="1582805196741" duration="69091000" />
     </task>
     <servers />
   </component>

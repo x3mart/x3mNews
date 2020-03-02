@@ -29,7 +29,7 @@ class CreateCategoriesTable extends Migration
 //            $table->timestamp('category_created_at')->useCurrent();
 //            $table->timestamp('category_updated_at')->useCurrent();
         });
-//       (new CategoriesSeeder())->run();
+      (new CategoriesSeeder())->run();
     }
 
     /**
