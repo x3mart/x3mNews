@@ -20,21 +20,23 @@ class CategoriesController extends Controller
     {
         if ($request->method() == 'POST')
         {
+            $this->validate($request, Categories::rules(), [], Categories::fieldsAttributes());
             $freshCategory = $request->except('_token');
-            if ((!$this->checkRequiredFields($freshCategory)))
-            {
-                $request->flash();
-                return redirect()->route('admin.addCategory')->with('error', 'Забыли заполнить поля');
-            }
-
             if ($request->file('category_image'))
             {
                 $path = $request->file('category_image')->store('public/imgs/news_categories');
                 $freshCategory['category_image'] = Storage::url($path);
             }
-            $category->fill($freshCategory);
-            $category->save();
-            return redirect()->route('admin.addCategory')->with('success', 'Категория успешно добавленна');
+            $result = $category->fill($freshCategory)->save();
+            if($result)
+            {
+                return redirect()->route('admin.addCategory')->with('success', 'Категория успешно добавленна');
+            } else
+            {
+                $request->flash();
+                return redirect()->route('admin.addCategory')->with('error', 'Что то пошло не так!!!');
+            }
+
         }
         return view('admin.addCategory');
     }
@@ -62,31 +64,25 @@ class CategoriesController extends Controller
     {
         if ($request->method() == 'POST')
         {
+            $this->validate($request, Categories::rules(), [], Categories::fieldsAttributes());
             $freshCategory = $request->except('_token');
             if ($request->file('category_image'))
             {
                 $path = $request->file('category_image')->store('public/imgs/news_categories');
                 $freshCategory['category_image'] = Storage::url($path);
             }
-            $category->fill($freshCategory);
-            $category->save();
-            if ((!$this->checkRequiredFields($freshCategory)))
+            if(!isset($freshCategory['category_private']))
             {
-                return redirect()->route('admin.updateCategory', $category)->with('error', 'Забыли заполнить поля!!! Редактируем снова');
+                $freshCategory['category_private'] = 0;
             }
-            return redirect()->route('admin.allCategories')->with('success', 'Категория успешно сохраненна');
-        }
-    }
-
-    public function checkRequiredFields($freshCategory)
-    {
-        foreach ($freshCategory as $item)
-        {
-            if (is_null($item))
+            $result = $category->fill($freshCategory)->save();
+            if ($result)
             {
-                return false;
+                return redirect()->route('admin.allCategories')->with('success', 'Категория успешно сохраненна');
+            } else{
+                $request->flash();
+                return redirect()->route('admin.updateCategory', $category)->with('error', 'Что то пошло не так!!!');
             }
         }
-        return true;
     }
 }

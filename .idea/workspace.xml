@@ -2,11 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22b45e5f-0cc7-412d-83da-6d6c50bbb069" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/public/648asHrEYTvzLG4ZOq5z6Ab8k5TnligY0ZikyOak.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/public/imgs/1ZlHKEoNoFAmnDl5h4KDw9lf0HgtPKbkNrpxguTA.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/public/imgs/3oxuIg5gsYoOouMBIGdBu5Axr3LrgelToXQZpE1T.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/public/imgs/5K9beoVa99D8O8jXPDxQQKd0RucbbsyY2dDZDFDe.jpeg" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/ru/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/ru/pagination.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/ru/passwords.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/ru/validation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Browser/ExampleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Browser/FormTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Browser/Pages/HomePage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Browser/Pages/Page.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Browser/console/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Browser/screenshots/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/DuskTestCase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Categories.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Categories.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoriesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/NewsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/News.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/News.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/NewsFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/NewsFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/addCategory.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/addCategory.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/addNews.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/addNews.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,6 +175,19 @@
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
       <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar" />
       <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
+      <path value="$PROJECT_DIR$/vendor/erusev/parsedown" />
+      <path value="$PROJECT_DIR$/vendor/seld/jsonlint" />
+      <path value="$PROJECT_DIR$/vendor/seld/phar-utils" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-ide-helper" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/beyondcode/laravel-dump-server" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/php-webdriver/webdriver" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/justinrainbow/json-schema" />
+      <path value="$PROJECT_DIR$/vendor/laravel/dusk" />
     </include_path>
   </component>
   <component name="ProjectId" id="1XNgiBMAVNbygdqDsUXFxzgzKE8" />
@@ -176,7 +206,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/imgs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
@@ -264,6 +294,7 @@
       <workItem from="1582724366935" duration="7060000" />
       <workItem from="1582796674356" duration="3461000" />
       <workItem from="1582805196741" duration="69091000" />
+      <workItem from="1583247242173" duration="394000" />
     </task>
     <servers />
   </component>
@@ -302,22 +333,26 @@
       <screen x="-1366" y="344" width="1366" height="728" />
     </state>
     <state x="-999" y="384" width="645" height="688" key="#phpunit.xml/-1366.344.1366.728/0.0.1920.1160@-1366.344.1366.728" timestamp="1580920797089" />
-    <state width="905" height="179" key="GridCell.Tab.0.bottom" timestamp="1582544305485">
-      <screen x="-1366" y="344" width="1366" height="728" />
+    <state width="1877" height="321" key="GridCell.Tab.0.bottom" timestamp="1583247644386">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="905" height="179" key="GridCell.Tab.0.bottom/-1366.344.1366.728/0.0.1920.1160@-1366.344.1366.728" timestamp="1582544305485" />
-    <state width="905" height="179" key="GridCell.Tab.0.center" timestamp="1582544305483">
-      <screen x="-1366" y="344" width="1366" height="728" />
+    <state width="1877" height="321" key="GridCell.Tab.0.bottom/-1366.344.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1583247644386" />
+    <state width="1877" height="321" key="GridCell.Tab.0.center" timestamp="1583247644385">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="905" height="179" key="GridCell.Tab.0.center/-1366.344.1366.728/0.0.1920.1160@-1366.344.1366.728" timestamp="1582544305483" />
-    <state width="905" height="179" key="GridCell.Tab.0.left" timestamp="1582544305470">
-      <screen x="-1366" y="344" width="1366" height="728" />
+    <state width="1877" height="321" key="GridCell.Tab.0.center/-1366.344.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1583247644385" />
+    <state width="1877" height="321" key="GridCell.Tab.0.left" timestamp="1583247644385">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="905" height="179" key="GridCell.Tab.0.left/-1366.344.1366.728/0.0.1920.1160@-1366.344.1366.728" timestamp="1582544305469" />
-    <state width="905" height="179" key="GridCell.Tab.0.right" timestamp="1582544305485">
-      <screen x="-1366" y="344" width="1366" height="728" />
+    <state width="1877" height="321" key="GridCell.Tab.0.left/-1366.344.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1583247644385" />
+    <state width="1877" height="321" key="GridCell.Tab.0.right" timestamp="1583247644386">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="905" height="179" key="GridCell.Tab.0.right/-1366.344.1366.728/0.0.1920.1160@-1366.344.1366.728" timestamp="1582544305485" />
+    <state width="1877" height="321" key="GridCell.Tab.0.right/-1366.344.1366.728/0.0.1920.1160@0.0.1920.1160" timestamp="1583247644386" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1582724606482">
       <screen x="-1366" y="344" width="1366" height="728" />
     </state>

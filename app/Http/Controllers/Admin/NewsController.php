@@ -14,21 +14,23 @@ class NewsController extends Controller
     {
         if ($request->method() == 'POST')
         {
+            $this->validate($request, News::rules(), [], News::fieldsAttributes());
             $freshNews = $request->except('_token');
-            if ((!$this->checkRequiredFields($freshNews)))
-            {
-                $request->flash();
-                return redirect()->route('admin.addNews')->with('error', 'Забыли заполнить поля');
-            }
-//            $news = new News;
             if ($request->file('news_image'))
             {
                 $path = $request->file('news_image')->store('public/imgs');
                 $freshNews['news_image'] = Storage::url($path);
             }
-            $news->fill($freshNews);
-            $news->save();
-            return redirect()->route('admin.addNews')->with('success', 'Новость успешно добавленна');
+            $result = $news->fill($freshNews)->save();
+            if($result)
+            {
+                return redirect()->route('admin.addNews')->with('success', 'Новость успешно добавленна');
+            } else
+            {
+                $request->flash();
+                return redirect()->route('admin.addNews')->with('error', 'Ошибка изменения новости');
+            }
+
         }
         return view('admin.addNews', ['categories' => Categories::all()]);
     }
@@ -52,17 +54,25 @@ class NewsController extends Controller
     {
         if ($request->method() == 'POST')
         {
+            $this->validate($request, News::rules(), [], News::fieldsAttributes());
             $freshNews = $request->except('_token');
             if ($request->file('news_image'))
             {
                 $path = $request->file('news_image')->store('public/imgs');
                 $freshNews['news_image'] = Storage::url($path);
             }
-            $news->fill($freshNews);
-            $news->save();
-            $request->flash();
-            if ((!$this->checkRequiredFields($freshNews)))
+            if(!isset($freshNews['news_private']))
             {
+                $freshNews['news_private'] = 0;
+            }
+            if(!isset($freshNews['news_important']))
+            {
+                $freshNews['news_important'] = 0;
+            }
+            $result = $news->fill($freshNews)->save();
+            if (!$result)
+            {
+                $request->flash();
                 return redirect()->route('admin.updateNews', $news)->with('error', 'Забыли заполнить поля!!! Редактируем снова');
             }
 
