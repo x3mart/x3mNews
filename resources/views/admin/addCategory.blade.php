@@ -26,32 +26,58 @@
             <div class="form-group">
                 <div class="form-group">
                     <label for="name">Название категории</label>
-                    <input type="text" class="form-control {{ (is_null(old('category_name')) && session('error')) ? 'alert-danger' : '' }}"
-                           id="name" name="category_name" value="{{ $category->category_name ?? old('category_name') }}" placeholder="Придумай название для категории новостей">
+                    @if ($errors->has('category_name'))
+                        <div class="alert alert-warning" role="alert">
+                            @foreach ($errors->get('category_name') as $err)
+                                {{ $err.' '}}
+                            @endforeach
+                        </div>
+                    @endif
+                    <input type="text" class="form-control {{ $errors->has('category_name') ? 'alert-danger' : '' }}"
+                           id="name" name="category_name" value="{{ (isset($category) && !$errors->has('category_name')) ? $category->category_name : old('category_name') }}" placeholder="Придумай название для категории новостей">
                 </div>
                 <div class="form-group">
                     <label for="alias">Псевдоним категории</label>
-                    <input type="text" class="form-control {{ (is_null(old('category_alias')) && session('error')) ? 'alert-danger' : '' }}"
-                           id="name" name="category_alias" value="{{ $category->category_alias ?? old('category_alias') }}" placeholder="Придумай название на латинице">
+                    @if ($errors->has('category_alias'))
+                        <div class="alert alert-warning" role="alert">
+                            @foreach ($errors->get('category_alias') as $err)
+                                {{ $err.' '}}
+                            @endforeach
+                        </div>
+                    @endif
+                    <input type="text" class="form-control {{ $errors->has('category_alias') ? 'alert-danger' : '' }}"
+                           id="name" name="category_alias" value="{{ (isset($category) && !$errors->has('category_alias')) ? $category->category_alias : old('category_alias') }}" placeholder="Придумай название на латинице">
                 </div>
 
             </div>
             <div class="form-group">
                 <label for="short">Описание категории</label>
-                <textarea class="form-control {{ (is_null(old('category_description')) && session('error')) ? 'alert-danger' : '' }}"
+                @if ($errors->has('category_description'))
+                    <div class="alert alert-warning" role="alert">
+                        @foreach ($errors->get('category_description') as $err)
+                            {{ $err.' '}}
+                        @endforeach
+                    </div>
+                @endif
+                <textarea class="form-control {{ $errors->has('category_description') ? 'alert-danger' : '' }}"
                           id="short" name="category_description" rows="3"
-                          placeholder="Манящее, краткое описание вашей новости.">{{ $category->category_description ?? old('category_description') }}
+                          placeholder="Манящее, краткое описание вашей новости.">{{ (isset($category) && !$errors->has('category_description')) ? $category->category_description : old('category_description') }}
                 </textarea>
             </div>
+                @if ($errors->has('category_image'))
+                    <div class="alert alert-warning" role="alert">
+                        @foreach ($errors->get('category_image') as $err)
+                            {{ $err.' '}}
+                        @endforeach
+                    </div>
+                @endif
             <div class="form-group">
-                <input type="file" class="" id="image" name="category_image">
+                <input type="file" class="{{ $errors->has('category_image') ? 'alert-danger' : '' }}" id="image" name="category_image">
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="1" id="private" name="news_private"
-                       @if (old('category_private') == 1) checked @endif
-                       @if(isset($category))
-                       @if($category->category_private == 1) checked @endif
-                    @endif>
+                <input class="form-check-input" type="checkbox" value="1" id="private" name="category_private"
+                    @if(isset($category->category_private) && $category->category_private == 1 &&!old('category_private')) checked @endif
+                    @if(old('category_private') == 1)checked @endif>
                 <label class="form-check-label" for="private">
                     Только для зарегистрированных
                 </label>
