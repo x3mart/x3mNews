@@ -42,7 +42,9 @@ class FormTest extends DuskTestCase
     /**
      * Тестируем возможность снять свойство important при редактировании Новости
      *
+     *
      * @return void
+     * @group foo
      */
     public function testEditNewsImportantUnchecked()
     {

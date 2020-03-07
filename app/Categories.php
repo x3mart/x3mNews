@@ -26,7 +26,8 @@ class Categories extends Model
             'category_name' => 'required|min:3|max:20|unique:categories,category_name',
             'category_alias' => 'required|min:3|max:20|alpha|regex:/^[a-z]+$/i|unique:categories,category_alias',
             'category_description' => 'required|min:20|max:150',
-            'category_image' => 'image|max:1024'
+            'category_image' => 'image|max:1024',
+            'category_private' => 'integer|boolean'
         ];
     }
 

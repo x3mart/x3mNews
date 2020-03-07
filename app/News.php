@@ -31,7 +31,9 @@ class News extends Model
             'news_category' => "required|exists:{$table},id",
             'news_short' => 'required|min:50|max:151',
             'news_inform' => 'required|min: 50| max:3000',
-            'news_image' => 'image|max:1024'
+            'news_image' => 'image|max:1024',
+            'news_private' => 'integer|boolean',
+            'news_important' => 'integer|boolean'
         ];
     }
 

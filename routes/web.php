@@ -14,21 +14,26 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-//Route::get('/', function () {
-//    return view('index');
-//});
-//
-//Route::get('/news/', function () {
-//    return view('news');
-//});
+Auth::routes();
+// Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
+// Route::post('login', 'Auth\LoginController@login');
+// Route::post('logout', 'Auth\LoginController@logout')->name('logout');
+
 Route::get('/', 'HomeController@index')->name('home');
 
 Route::group([
     'prefix'=>'admin',
     'namespace'=>'Admin',
-    'as'=>'admin.'
+    'as'=>'admin.',
+    'middleware' => ['auth', 'is_admin']
 ], function () {
+    Route::match(['get', 'post'], '/profile/edit', 'ProfileController@update')->name('updateProfile');
+
+    Route::match(['get', 'post'], '/users/edit', 'UsersController@update')->name('updateUsers');
+
     Route::get('/', 'IndexController@index')->name('admin');
+
+
 
     Route::match(['post','get'],'/addNews', 'NewsController@addnews')->name('addNews');
     Route::get('/deleteNews{news}', 'NewsController@delete')->name('deleteNews');
@@ -57,8 +62,15 @@ Route::group([
     Route::get('/{cat_alias}/{id}', 'NewsController@oneNews')->name('oneNews');
 });
 
+Route::group([
+    'prefix'=>'user',
+    'namespace'=>'Users',
+    'as'=>'user.',
+    'middleware' => ['auth']
+], function () {
+    Route::match(['get', 'post'], '/profile/edit', 'ProfileController@update')->name('updateProfile');
+});
 
 
-Auth::routes();
 
 //Route::get('/home', 'HomeController@index')->name('home');

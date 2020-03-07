@@ -86,7 +86,7 @@
                 </div>
             @endif
             <textarea class="form-control {{ $errors->has('news_inform') ? 'alert-danger' : '' }}"
-                      id="inform" name="news_inform" rows="5" placeholder="Подробный текст">{{ (isset($news) && !$errors->has('news_inform')) ? $news->news_inform : old('news_inform') }}
+                      id="inform" name="news_inform" rows="10" placeholder="Подробный текст">{{ (isset($news) && !$errors->has('news_inform')) ? $news->news_inform : old('news_inform') }}
             </textarea>
         </div>
         @if ($errors->has('news_image'))

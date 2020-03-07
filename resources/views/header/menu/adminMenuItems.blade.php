@@ -10,8 +10,8 @@
     </a>
 </li>
 <li class="nav-item">
-    <a class="nav-link {{ request()->routeIs('admin.test1')? 'font-weight-bolder' : '' }}" href="{{route('admin.test1')}}">
-        Test1
+    <a class="nav-link {{ request()->routeIs('admin.updateUsers')? 'font-weight-bolder' : '' }}" href="{{route('admin.updateUsers')}}">
+        Редактировать Админов
     </a>
 </li>
 <li class="nav-item">
