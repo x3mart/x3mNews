@@ -20,7 +20,8 @@ class CategoriesController extends Controller
     {
         if ($request->method() == 'POST')
         {
-            $this->validate($request, Categories::rules(), [], Categories::fieldsAttributes());
+
+            // $this->validate($request, Categories::rules(), [], Categories::fieldsAttributes());
             $freshCategory = $request->except('_token');
             if ($request->file('category_image'))
             {
@@ -64,7 +65,7 @@ class CategoriesController extends Controller
     {
         if ($request->method() == 'POST')
         {
-            $this->validate($request, Categories::rules(), [], Categories::fieldsAttributes());
+            // $this->validate($request, Categories::rules(), [], Categories::fieldsAttributes());
             $freshCategory = $request->except('_token');
             if ($request->file('category_image'))
             {

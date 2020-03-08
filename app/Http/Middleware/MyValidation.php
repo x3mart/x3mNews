@@ -2,7 +2,7 @@
 
 namespace App\Http\Middleware;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Validator;
+use App\Validation;
 use Closure;
 
 class MyValidation
@@ -16,17 +16,13 @@ class MyValidation
      */
     public function handle($request, Closure $next)
     {
+        $validator = app('App\Http\Controllers\Controller');
+        if ($request->isMethod('post'))
+        dd($request->id);
+        {
+        $validator->validate($request, Validation::rules($request), [], Validation::fieldsAttributes());
+        }
 
         return $next($request);
-    }
-
-    protected function rules()
-    {
-
-    }
-
-    protected function fieldsAttributes()
-    {
-
     }
 }

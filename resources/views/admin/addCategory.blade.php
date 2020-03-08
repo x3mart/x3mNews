@@ -26,15 +26,14 @@
             <div class="form-group">
                 <div class="form-group">
                     <label for="name">Название категории</label>
-                    @if ($errors->has('category_name'))
-                        <div class="alert alert-warning" role="alert">
-                            @foreach ($errors->get('category_name') as $err)
-                                {{ $err.' '}}
-                            @endforeach
-                        </div>
-                    @endif
-                    <input type="text" class="form-control {{ $errors->has('category_name') ? 'alert-danger' : '' }}"
-                           id="name" name="category_name" value="{{ (isset($category) && !$errors->has('category_name')) ? $category->category_name : old('category_name') }}" placeholder="Придумай название для категории новостей">
+
+                    <input type="text" class="form-control @error('category_name') is-invalid @enderror"
+                           id="name" name="category_name" value="{{ (isset($category) && !old('category_name')) ? $category->category_name : old('category_name') }}" placeholder="Придумай название для категории новостей">
+                    @error('category_name')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
                 </div>
                 <div class="form-group">
                     <label for="alias">Псевдоним категории</label>

@@ -25,7 +25,7 @@ Route::group([
     'prefix'=>'admin',
     'namespace'=>'Admin',
     'as'=>'admin.',
-    'middleware' => ['auth', 'is_admin']
+    'middleware' => ['auth', 'is_admin', 'my_validate']
 ], function () {
     Route::match(['get', 'post'], '/profile/edit', 'ProfileController@update')->name('updateProfile');
 

@@ -3,7 +3,8 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-
+use Illuminate\Http\Request;
+use Auth;
 
 class News extends Model
 {
@@ -21,32 +22,4 @@ class News extends Model
     public  function category() {
         return $this->belongsTo(Categories::class, 'news_category');
     }
-
-    public static function rules()
-    {
-        $table = (new Categories)->getTable();
-        return
-        [
-            'news_title' => 'required|min:5|max:50',
-            'news_category' => "required|exists:{$table},id",
-            'news_short' => 'required|min:50|max:151',
-            'news_inform' => 'required|min: 50| max:3000',
-            'news_image' => 'image|max:1024',
-            'news_private' => 'integer|boolean',
-            'news_important' => 'integer|boolean'
-        ];
-    }
-
-    public static function fieldsAttributes ()
-    {
-        return
-        [
-            'news_title' => 'Название новости',
-            'news_category' => 'Категория новостей',
-            'news_short' => 'Краткое описание',
-            'news_inform' => 'Текст новости',
-            'news_image' => 'Изображение'
-        ];
-    }
-
 }

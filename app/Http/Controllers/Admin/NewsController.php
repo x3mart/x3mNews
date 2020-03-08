@@ -14,7 +14,7 @@ class NewsController extends Controller
     {
         if ($request->method() == 'POST')
         {
-            $this->validate($request, News::rules(), [], News::fieldsAttributes());
+            // $this->validate($request, News::rules(), [], News::fieldsAttributes());
             $freshNews = $request->except('_token');
             if ($request->file('news_image'))
             {
@@ -54,7 +54,7 @@ class NewsController extends Controller
     {
         if ($request->method() == 'POST')
         {
-            $this->validate($request, News::rules(), [], News::fieldsAttributes());
+            //$this->validate($request, News::rules(), [], News::fieldsAttributes());
             $freshNews = $request->except('_token');
             if ($request->file('news_image'))
             {
@@ -80,15 +80,15 @@ class NewsController extends Controller
         }
     }
 
-    public function checkRequiredFields($freshNews)
-    {
-        foreach ($freshNews as $item)
-        {
-            if (is_null($item))
-            {
-                return false;
-            }
-        }
-        return true;
-    }
+    // public function checkRequiredFields($freshNews)
+    // {
+    //     foreach ($freshNews as $item)
+    //     {
+    //         if (is_null($item))
+    //         {
+    //             return false;
+    //         }
+    //     }
+    //     return true;
+    // }
 }

@@ -15,7 +15,7 @@ class ProfileController extends Controller
         if($request->isMethod('post'))
         {
             $user = Auth::user();
-            $this->validate($request, $this->ValidateRules($request),[],$this->attributeNames());
+            // $this->validate($request, $this->ValidateRules($request),[],$this->attributeNames());
             if(Hash::check($request->post('curent_password'), $user->password))
             {
                 $user->fill(
@@ -37,28 +37,6 @@ class ProfileController extends Controller
         }
 
         return view('user.profile');
-    }
-
-    public function ValidateRules ($request)
-    {
-        return
-            [
-                'name' => 'required|string|max:10',
-                'email' => 'required|email|unique:users,email,'.Auth::id(),
-                'curent_password' => 'required|string',
-                'password' => $request->password ? 'string|min:3' : '',
-                'password_confirm' => ($request->password_confirm || $request->password) ? 'same:password|string' :''
-            ];
-    }
-
-    protected function attributeNames()
-    {
-        return
-        [
-            'curent_password' => 'Пароль',
-            'password' => 'Новый пароль',
-            'password_confirm' =>'Пароль еще разок'
-        ];
     }
 }
 
