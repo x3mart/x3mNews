@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -15,6 +16,8 @@ use Illuminate\Support\Facades\Auth;
 */
 
 Auth::routes();
+Route::get('/auth/vk', 'LoginController@loginVK')->name('vklogin');
+Route::get('/auth/vk/response', 'LoginController@responseVK')->name('vkresponse');
 // Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
 // Route::post('login', 'Auth\LoginController@login');
 // Route::post('logout', 'Auth\LoginController@logout')->name('logout');
@@ -26,7 +29,9 @@ Route::group([
     'namespace'=>'Admin',
     'as'=>'admin.',
     'middleware' => ['auth', 'is_admin', 'my_validate']
+    //, 'my_validate'
 ], function () {
+    Route::get('/parser', 'ParserController@index')->name('parser');
     Route::match(['get', 'post'], '/profile/edit', 'ProfileController@update')->name('updateProfile');
 
     Route::match(['get', 'post'], '/users/edit', 'UsersController@update')->name('updateUsers');
@@ -66,7 +71,7 @@ Route::group([
     'prefix'=>'user',
     'namespace'=>'Users',
     'as'=>'user.',
-    'middleware' => ['auth']
+    'middleware' => ['auth', 'my_validate']
 ], function () {
     Route::match(['get', 'post'], '/profile/edit', 'ProfileController@update')->name('updateProfile');
 });

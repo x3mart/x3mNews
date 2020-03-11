@@ -15,7 +15,7 @@
     </a>
 </li>
 <li class="nav-item">
-    <a class="nav-link {{ request()->routeIs('admin.test2')? 'font-weight-bolder' : '' }}" href="{{route('admin.test2')}}">
-        Test2
+    <a class="nav-link {{ request()->routeIs('admin.parser')? 'font-weight-bolder' : '' }}" href="{{route('admin.parser')}}">
+        Parser
     </a>
 </li>

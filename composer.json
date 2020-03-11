@@ -14,7 +14,9 @@
         "fzaninotto/faker": "^1.9",
         "laravel/framework": "^6.2",
         "laravel/tinker": "^2.0",
-        "laravel/ui": "^1.2"
+        "laravel/ui": "^1.2",
+        "orchestra/parser": "4.",
+        "socialiteproviders/vkontakte": "^4.0"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.2",

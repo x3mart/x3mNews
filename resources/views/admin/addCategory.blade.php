@@ -12,7 +12,7 @@
     <main class="container mx-auto">
         <h3 class="text-center">@if(isset($category->id)) Редактировать Категорию @else Добавить новую категонию @endif</h3>
         <img class="w-25 d-block my-3 mx-auto" src="@if(isset($category->category_image)) {{ $category->category_image }} @else {{ asset('imgs/1.svg') }} @endif" alt="">
-        @if (session('success') || session('error'))
+        @if (session('success') || session('error') || session('errors') )
             <div class="alert {{ session('success') ? 'alert-success' : 'alert-danger' }} alert-dismissible fade show" role="alert">
                 <strong>{{ session('success') ?? session('error')}}</strong>
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">

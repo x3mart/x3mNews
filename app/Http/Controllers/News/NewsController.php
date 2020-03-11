@@ -10,7 +10,7 @@ use App\News;
 class NewsController extends Controller
 {
     public function allCategories() {
-        return view('news.allCategories', ['categories'=>Categories::all()]);
+        return view('news.allCategories', ['categories'=>Categories::query()->orderBy('id', 'desc')->get()]);
     }
 
     public function newsOneCategory ($cat_alias) {

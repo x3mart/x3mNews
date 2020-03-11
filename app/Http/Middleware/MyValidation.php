@@ -17,10 +17,11 @@ class MyValidation
     public function handle($request, Closure $next)
     {
         $validator = app('App\Http\Controllers\Controller');
+
         if ($request->isMethod('post'))
-        dd($request->id);
+        // dd($request);
         {
-        $validator->validate($request, Validation::rules($request), [], Validation::fieldsAttributes());
+        $validator->validate($request, Validation::rules($request), [], Validation::fieldsAttributes($request));
         }
 
         return $next($request);
