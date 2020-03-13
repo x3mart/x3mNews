@@ -19,6 +19,13 @@ return [
         'redirect' => env('VKONTAKTE_REDIRECT_URI'),
     ],
 
+    'odnoklassniki' => [
+        'client_id' => env('ODNOKLASSNIKI_KEY'),
+        // 'client_public' =>env('ODNOKLASSNIKI_PUBLIC'),
+        'client_secret' => env('ODNOKLASSNIKI_SECRET'),
+        'redirect' => env('ODNOKLASSNIKI_REDIRECT_URI')
+    ],
+
     'mailgun' => [
         'domain' => env('MAILGUN_DOMAIN'),
         'secret' => env('MAILGUN_SECRET'),

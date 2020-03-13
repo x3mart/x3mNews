@@ -18,6 +18,8 @@ use Illuminate\Support\Facades\Auth;
 Auth::routes();
 Route::get('/auth/vk', 'LoginController@loginVK')->name('vklogin');
 Route::get('/auth/vk/response', 'LoginController@responseVK')->name('vkresponse');
+Route::get('/auth/odnoklassniki', 'LoginController@loginOdnoklassniki')->name('oklogin');
+Route::get('/auth/odnoklassniki/response', 'LoginController@responseOdnoklassniki')->name('okresponse');
 // Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
 // Route::post('login', 'Auth\LoginController@login');
 // Route::post('logout', 'Auth\LoginController@logout')->name('logout');

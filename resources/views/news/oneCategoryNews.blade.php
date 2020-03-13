@@ -23,8 +23,18 @@
                 <div class="card-body">
                     <h5 class="card-title">{{ $item->news_title }}</h5>
                     <p class="card-text">{{$item->news_short }}</p>
-                    <a href="{{ route('news.oneNews', ['cat_alias'=>$category->category_alias, 'id'=>$item->id]) }}"
-                       class="btn btn-primary">Подробнее -></a>
+                    @if ($item->news_private && !isset(Auth::user()->id))
+                        <a href="{{ route('login') }}"
+                            class="btn btn-primary">
+                            Войти и читать
+                        </a>
+                    @else
+                        <a href="{{ route('news.oneNews', ['cat_alias'=>$category->category_alias, 'id'=>$item->id]) }}"
+                            class="btn btn-primary">
+                            Подробнее ->
+                        </a>
+                    @endif
+
                 </div>
             </div>
         @endforeach

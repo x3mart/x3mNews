@@ -47,7 +47,8 @@ class ParserController extends Controller
             'news_short' => mb_substr($item['description'], 0, 30),
             'news_inform' => $item['description'],
             'news_image' => $item['enclosure::url'],
-            'news_important' => random_int(0,1)
+            'news_important' => random_int(0,1),
+            'news_private' => random_int(0,1)
         ];
     }
     DB::table('news')->insert($news);

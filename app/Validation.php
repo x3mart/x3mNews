@@ -24,7 +24,7 @@ class Validation extends Model
             'news_important' => 'integer|boolean'
             ];
         }
-        if ($request->routeHas('*Categor*')){
+        if ($request->routeIs('*Categor*')){
             return
         [
             //Категории новостей
@@ -36,7 +36,7 @@ class Validation extends Model
         ];
         }
         return [];
-        if ($request->routeHas('*Profile*')){
+        if ($request->routeIs('*Profile*')){
         //     //Users Profiles
         return
         [
@@ -63,7 +63,7 @@ class Validation extends Model
             'news_image' => 'Изображение'
             ];
         }
-        if ($request->routeHas('*Categor*')){
+        if ($request->routeIs('*Categor*')){
             return
         [
         //     //Категории новостей
@@ -73,7 +73,7 @@ class Validation extends Model
             'category_image' => 'Изображение'
         ];
         }
-        if ($request->routeHas('*Profile*')){
+        if ($request->routeIs('*Profile*')){
             return
             [
             //Users Profiles

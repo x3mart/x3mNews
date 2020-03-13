@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bfca38226a55fd405b45ffd5721dc355",
+    "content-hash": "c430fbe4b47c451ecbeedb78ceffa712",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -2085,6 +2085,43 @@
             "time": "2020-02-21T04:36:14+00:00"
         },
         {
+            "name": "socialiteproviders/facebook",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SocialiteProviders/Facebook.git",
+                "reference": "c89d5fa4c770c9e1ec0e472ccb7dd7353a199619"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SocialiteProviders/Facebook/zipball/c89d5fa4c770c9e1ec0e472ccb7dd7353a199619",
+                "reference": "c89d5fa4c770c9e1ec0e472ccb7dd7353a199619",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0",
+                "socialiteproviders/manager": "~3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SocialiteProviders\\Facebook\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Oleksandr Prypkhan (Alex Wells)",
+                    "email": "autaut03@googlemail.com"
+                }
+            ],
+            "description": "Facebook (facebook.com) OAuth2 Provider for Laravel Socialite",
+            "time": "2019-01-11T19:47:04+00:00"
+        },
+        {
             "name": "socialiteproviders/manager",
             "version": "v3.5",
             "source": {
@@ -2140,6 +2177,43 @@
             ],
             "description": "Easily add new or override built-in providers in Laravel Socialite.",
             "time": "2020-03-08T16:54:44+00:00"
+        },
+        {
+            "name": "socialiteproviders/odnoklassniki",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SocialiteProviders/Odnoklassniki.git",
+                "reference": "9ce7638b04c4ee61b83414487c0b126d6879364f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SocialiteProviders/Odnoklassniki/zipball/9ce7638b04c4ee61b83414487c0b126d6879364f",
+                "reference": "9ce7638b04c4ee61b83414487c0b126d6879364f",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0",
+                "socialiteproviders/manager": "~2.0 || ~3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SocialiteProviders\\Odnoklassniki\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Talgat Zheldibaev",
+                    "email": "talgat06585@gmail.com"
+                }
+            ],
+            "description": "Odnoklassniki OAuth2 Provider for Laravel Socialite",
+            "time": "2018-06-21T10:01:20+00:00"
         },
         {
             "name": "socialiteproviders/vkontakte",
